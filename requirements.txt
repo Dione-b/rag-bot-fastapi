@@ -1,0 +1,12 @@
+langchain-community==0.0.11 
+pypdf==3.17.4 
+langchain==0.1.0 
+python-dotenv==1.0.0 
+langchain-openai==0.0.2.post1 
+faiss-cpu==1.7.4 
+tiktoken==0.5.2 
+langchainhub==0.1.14
+uvicorn
+fastapi
+uuid
+python-multipart
