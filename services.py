@@ -34,8 +34,6 @@ class PDFService:
         try:
             with open(file_path, "wb") as buffer:
                 buffer.write(await pdf_file.read())
-            # Após o upload, chame split_and_vectorize_pdf    
-            await self.split_and_vectorize_pdf(file_path)
             return {"filename": unique_filename, "content_type": pdf_file.content_type}
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
